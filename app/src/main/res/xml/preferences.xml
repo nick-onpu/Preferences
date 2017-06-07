@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Общие">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:key="pref_mode"
+            android:summary='Выделите чекбокс для режима "онлайн"'
+            android:title="Режим работы" />
+        <EditTextPreference
+            android:defaultValue="Vasya"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:key="pref_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Введите имя" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Проживание">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/array"
+            android:entryValues="@array/array"
+            android:key="pref_city"
+            android:title="Выберите город" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
